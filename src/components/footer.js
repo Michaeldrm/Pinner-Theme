@@ -30,7 +30,7 @@ class FooterMenu extends React.Component {
 		}
 
 		return (
-			<div>
+			<div className="footer-menu-container">
 				<ul className="footer-menu">{ulItems}</ul>
 			</div>
 		);
@@ -92,14 +92,10 @@ export default class Footer extends React.PureComponent {
 				<div className="container absolute-footer">
 					<div className="content">
 						<div className="columns is-gapless">
-							<div className="column is-2">
+							<div className="footer-left-container">
 								<div className="mobile-padding">
-									<FooterMenu
-										items={themeSettings.footer_menu_1_items}
-									/>
-									<small>
-	                  {themeSettings.footer_about}
-	                </small>
+									<FooterMenu items={themeSettings.footer_menu_1_items} />
+									<small>{themeSettings.footer_about}</small>
 								</div>
 							</div>
 							<div className="column is-1 is-hidden-mobile" />

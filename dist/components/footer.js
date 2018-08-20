@@ -36,7 +36,7 @@ class FooterMenu extends React.Component {
 
 		return React.createElement(
 			'div',
-			null,
+			{ className: 'footer-menu-container' },
 			React.createElement(
 				'ul',
 				{ className: 'footer-menu' },
@@ -118,13 +118,11 @@ export default class Footer extends React.PureComponent {
 						{ className: 'columns is-gapless' },
 						React.createElement(
 							'div',
-							{ className: 'column is-2' },
+							{ className: 'footer-left-container' },
 							React.createElement(
 								'div',
 								{ className: 'mobile-padding' },
-								React.createElement(FooterMenu, {
-									items: themeSettings.footer_menu_1_items
-								}),
+								React.createElement(FooterMenu, { items: themeSettings.footer_menu_1_items }),
 								React.createElement(
 									'small',
 									null,

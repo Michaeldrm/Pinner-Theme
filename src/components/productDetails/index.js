@@ -16,17 +16,17 @@ import RelatedProducts from './relatedProducts';
 import Tags from './tags';
 
 const CategoryHero = ({ product, categories }) => (
-  <section className="hero is-dark">
-    <div className="hero-body">
-      <div className="container">
-        <h1 className="title is-4 product-name">{product.name}</h1>
-          {themeSettings.show_product_breadcrumbs &&
-            <Breadcrumbs product={product} categories={categories} />
-          }
-      </div>
-    </div>
-  </section>
-)
+	<section className="hero is-dark">
+		<div className="hero-body">
+			<div className="container">
+				<h1 className="title is-4 product-name">{product.name}</h1>
+				{themeSettings.show_product_breadcrumbs && (
+					<Breadcrumbs product={product} categories={categories} />
+				)}
+			</div>
+		</div>
+	</section>
+);
 
 const Description = ({ description }) => (
 	<div
