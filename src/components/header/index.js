@@ -4,6 +4,7 @@ import { themeSettings, text } from '../../lib/settings';
 import Cart from './cart';
 import CartIndicator from './cartIndicator';
 import SearchBox from './searchBox';
+import LocationMap from './locationMap';
 import HeadMenu from './headMenu';
 
 const Logo = ({ src, onClick, alt }) => (
