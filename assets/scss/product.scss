@@ -76,6 +76,10 @@
   min-height: 200px;
 }
 
+.image-gallery {
+  max-width: 100%;
+}
+
 .ReactModalPortal img {
   max-width: none;
 }
@@ -131,10 +135,6 @@ Mobile
 
   .section-product .image-gallery-slide-wrapper.left, .image-gallery-slide-wrapper.right {
     width: 100%;
-  }
-
-  .section-product .image-gallery {
-    margin: -1.5rem -1.5rem 0 -1.5rem;
   }
 
   .button-addtocart {

@@ -27,6 +27,10 @@
 
 .hero-body .breadcrumb {}
 
+.breadcrumb ol, .breadcrumb ul {
+    justify-content: center;
+}
+
 .hero.is-light {
   background-color: whitesmoke;
   color: inherit;
