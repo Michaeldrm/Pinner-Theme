@@ -4,6 +4,7 @@ import { themeSettings, text } from '../../lib/settings';
 import Cart from './cart';
 import CartIndicator from './cartIndicator';
 import SearchBox from './searchBox';
+import LocationMap from './locationMap';
 import HeadMenu from './headMenu';
 
 const Logo = ({ src, onClick, alt }) => React.createElement(
@@ -111,7 +112,6 @@ export default class Header extends React.Component {
 
 	render() {
 		const {
-			categories,
 			cart,
 			settings,
 			currentPage,
@@ -147,7 +147,6 @@ export default class Header extends React.Component {
 								'div',
 								{ className: 'primary-nav is-hidden-mobile' },
 								React.createElement(HeadMenu, {
-									categories: categories,
 									location: location,
 									isMobile: false
 								})
@@ -211,7 +210,6 @@ export default class Header extends React.Component {
 				},
 				React.createElement(HeadMenu, {
 					isMobile: true,
-					categories: categories,
 					location: location,
 					onClick: this.menuClose
 				})

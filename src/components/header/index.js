@@ -114,7 +114,6 @@ export default class Header extends React.Component {
 
 	render() {
 		const {
-			categories,
 			cart,
 			settings,
 			currentPage,
@@ -145,7 +144,6 @@ export default class Header extends React.Component {
 
 								<div className="primary-nav is-hidden-mobile">
 									<HeadMenu
-										categories={categories}
 										location={location}
 										isMobile={false}
 									/>
@@ -211,7 +209,6 @@ export default class Header extends React.Component {
 				>
 					<HeadMenu
 						isMobile={true}
-						categories={categories}
 						location={location}
 						onClick={this.menuClose}
 					/>

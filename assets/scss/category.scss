@@ -50,6 +50,10 @@
   margin-bottom: .8rem;
 }
 
+.is-light .hero-body .container .breadcrumb li + li::before {
+  color: #555;
+}
+
 .left-sidebar {
   background-color: whitesmoke;
   padding: 1.5rem;
